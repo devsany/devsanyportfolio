@@ -1,33 +1,251 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: rgb(31, 31, 43); */
+}
+.main {
+  width: 100%;
+  display: flex;
+}
+.left {
+  width: 30%;
+  /* border: 1px solid rgb(53, 51, 51); */
+}
+.right {
+  width: 70%;
+  /* border: 1px solid rgb(53, 51, 51); */
+}
+.left_cornor_1 {
+  /* border: 1px solid black; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  text-align: center;
+  height: auto;
+  /* box-shadow: 1px 1px px #fff; */
+  background-color: rgb(209, 209, 226);
+  color: #252424;
+  align-items: center;
+}
+.local {
+  /* border-bottom: 1px solid rgb(66, 46, 46); */
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+h2 {
+  color: rgb(43, 43, 43);
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
+.left_cornor_1 h3 {
+  margin-top: -20px;
+  padding: 10px;
+  letter-spacing: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.CircularProgressbar-path {
+  stroke: rgb(206, 9, 9);
+}
+.CircularProgressbar-trail {
+  /* width: 50px; */
+  stroke: rgb(238, 255, 0);
+}
+.CircularProgressbar-text {
+  border-radius: 10px;
+  fill: yellow;
+}
+.CircularProgressbar-background {
+  fill: rgb(255, 251, 5);
+}
+main button {
+  color: #252525;
+  padding: 5px;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  width: 23.2rem;
+  margin: 10px;
+  background-color: rgb(209, 209, 226);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  text-align: right;
+  color: #242323;
+  padding: 5px;
+  flex-grow: 1;
+  /* width: 10%; */
+  margin: 10px;
+  background-color: rgb(209, 209, 226);
+}
+.header_skill {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.show {
+  padding: 20px;
+}
+.location {
+  /* border: px solid #fff; */
+  background-color: yellow;
+  border-top: 5px solid #fff;
+  transition-delay: 2s;
+  /* border-bottom-left-radius: 9999px; */
+  /* border-bottom-right-radius: 9999px; */
+}
+.about_me_main_header_left {
+  display: flex;
+}
+.about_me_main_header_left_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 25rem;
+  margin: 10px;
+  /* border: 1px solid black; */
+  background-color: rgb(237, 240, 241);
+}
+.about_me_main_header_left_2 {
+  width: 40%;
+  border: 1px solid black;
+}
+.hii {
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: 50px;
+  font-weight: 800;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.name {
+  font-size: 25px;
+  font-weight: 900;
+  color: #252525;
+  /* text-shadow: 1px 1px 10px #242323; */
+}
+.developer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+}
+/* media query */
+@media only screen and (max-width: 900px) {
+  h2 {
+    color: rgb(43, 43, 43);
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 10px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+  }
+  main button {
+    color: #252525;
+    width: 13rem;
+    flex-flow: column-reverse;
+    background-color: rgb(209, 209, 226);
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media only screen and (max-width: 720px) {
+  .main {
+    display: grid;
+  }
+  .left {
+    width: 100%;
+    /* border: 1px solid rgb(53, 51, 51); */
+  }
+  .left_cornor_1 {
+    /* border: 1px solid black; */
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    margin-bottom: 0px;
+    margin-top: 5px;
+    text-align: center;
+    height: auto;
+    /* box-shadow: 1px 1px px #fff; */
+    background-color: rgb(209, 209, 226);
+    color: #252424;
+    align-items: center;
+  }
+  .navbar {
+    text-align: right;
+    color: #242323;
+    flex-grow: 1;
+    background-color: yellow;
+  }
+  .local {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+  .nav {
+    display: block;
+  }
+  .navbar {
+    text-align: right;
+    color: #242323;
+    padding: 5px;
+    flex-grow: 1;
+    margin: 10px;
+    background-color: rgb(209, 209, 226);
+  }
+  .location {
+    background-color: yellow;
+    border-top: 5px solid #fff;
+    transition-delay: 2s;
+  }
+  main button {
+    color: #252525;
+    width: 95%;
+    flex-flow: column-reverse;
+    background-color: rgb(209, 209, 226);
+  }
+  .location {
+    background-color: yellow;
+    transition-delay: 2s;
+  }
+  .about_me_main_header_left {
+    display: block;
+  }
+  .about_me_main_header_left_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94vw;
+    /* flex-grow: 4; */
+    height: 25rem;
+    margin: 10px;
+    /* border: 1px solid black; */
+    background-color: aliceblue;
+  }
+  .about_me_main_header_left_2 {
+    width: 100%;
+    border: 1px solid black;
+  }
+  h2 {
+    color: rgb(43, 43, 43);
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    cursor: pointer;
+    /* border: 1px solid black; */
   }
 }
