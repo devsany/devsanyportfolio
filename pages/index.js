@@ -7,6 +7,8 @@ import RecentProject from "./component/RecentProject";
 import Card from "./component/Card";
 import RecentSkill from "./component/RecentSkill";
 import Skill from "./component/Skill";
+import Testimonials from "./component/Testimonials";
+import TestimonialSkill from "./component/TestimonialSkill";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -373,6 +375,8 @@ export default function Home() {
           <Card />
           <RecentSkill />
           <Skill />
+          <Testimonials />
+          <TestimonialSkill />
         </div>
       </div>
     </main>

@@ -165,6 +165,14 @@ main button {
   background-color: #f35656;
   color: #fff;
 }
+.recent_testimonials_main {
+  margin: 10px;
+  background-color: #3f3737;
+  color: #fff;
+}
+.recent_testimonials_main h2 {
+  color: #fff;
+}
 /* media query */
 @media only screen and (max-width: 900px) {
   h2 {
@@ -285,7 +293,7 @@ main button {
   /* background-color: rgb(250, 89, 138); */
 }
 .skill_main {
-  background-color: #f35656;
+  background-color: #eeecec;
   margin: 10px;
 }
 
@@ -386,7 +394,25 @@ span {
 span:hover {
   color: #222020;
 }
+.link {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+.link_card {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #b3b0b0;
+  border-radius: 5px;
+}
+.link_card:hover {
+  cursor: pointer;
+}
 @media only screen and (max-width: 720px) {
+  label {
+    font-size: 12px;
+  }
   .main {
     display: grid;
   }
@@ -468,7 +494,20 @@ span:hover {
   .recent_skill_main {
     /* border: 1px solid black; */
     margin: 10px;
+
     width: 91.8vw;
+  }
+  .recent_skill_main h2 {
+    background-color: #f35656;
+  }
+  .recent_testimonials_main {
+    margin: 10px;
+    background-color: #3f3737;
+    color: #fff;
+    width: 91.8vw;
+  }
+  .recent_testimonials_main h2 {
+    color: #fff;
   }
   h2 {
     color: rgb(43, 43, 43);
@@ -547,8 +586,9 @@ span:hover {
   }
   /* skill */
   .skill_main {
+    font-size: 12px;
     width: 91.7vw;
-    background-color: #f35656;
+    background-color: #e9e7e7;
     margin: 10px;
   }
 

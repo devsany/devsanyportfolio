@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 const SomeSkill1 = () => {
@@ -56,6 +57,11 @@ const SomeSkill1 = () => {
                 })}
             </div>
           ) : null}
+        </div>
+      </div>
+      <div className="link">
+        <div className="link_card">
+          <Link href="/skill">Show More</Link>
         </div>
       </div>
     </div>
