@@ -3,6 +3,10 @@ import { Inter } from "next/font/google";
 import { CircularProgressbar } from "react-circular-progressbar";
 import { useState } from "react";
 import AboutMe from "./component/AboutMe";
+import RecentProject from "./component/RecentProject";
+import Card from "./component/Card";
+import RecentSkill from "./component/RecentSkill";
+import Skill from "./component/Skill";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -69,7 +73,7 @@ export default function Home() {
           <div className="left_cornor_1">
             <div className="header_skill" onClick={handleLocaiton}>
               <div className="showSkill">
-                <h2>Location</h2>
+                <h2>🚓 Location</h2>
               </div>
               <div className="show">{showLocation ? "Hide" : "Show"} </div>
             </div>
@@ -108,7 +112,7 @@ export default function Home() {
           <div className="left_cornor_1">
             <div className="header_skill" onClick={handleShowSkill}>
               <div className="showSkill">
-                <h2>Language</h2>
+                <h2>❤Language</h2>
               </div>
               <div className="show">{showSkill ? "Hide" : "Show"} </div>
             </div>
@@ -140,7 +144,7 @@ export default function Home() {
           <div className="left_cornor_1">
             <div className="header_skill" onClick={handleCoreTechnology}>
               <div className="showSkill">
-                <h2>Core Technology</h2>
+                <h2>💺Core Technology</h2>
               </div>
               <div className="show">
                 {showCoreTechnology ? "Hide" : "Show"}{" "}
@@ -180,7 +184,7 @@ export default function Home() {
           <div className="left_cornor_1">
             <div className="header_skill" onClick={handleCss}>
               <div className="showSkill">
-                <h2>Css Framework</h2>
+                <h2>🦖Css Framework</h2>
               </div>
               <div className="show">{showCss ? "Hide" : "Show"} </div>
             </div>
@@ -209,7 +213,7 @@ export default function Home() {
           <div className="left_cornor_1">
             <div className="header_skill" onClick={handleJavascript}>
               <div className="showSkill">
-                <h2>Javascript</h2>
+                <h2>😎Javascript</h2>
               </div>
               <div className="show">{showJavascript ? "Hide" : "Show"} </div>
             </div>
@@ -245,7 +249,7 @@ export default function Home() {
           <div className="left_cornor_1">
             <div className="header_skill" onClick={handleFramework}>
               <div className="showSkill">
-                <h2>FrameWork</h2>
+                <h2>🤞FrameWork</h2>
               </div>
               <div className="show">{showFrameWork ? "Hide" : "Show"} </div>
             </div>
@@ -278,7 +282,7 @@ export default function Home() {
           <div className="left_cornor_1">
             <div className="header_skill" onClick={handleVersion}>
               <div className="showSkill">
-                <h2>Version Control</h2>
+                <h2>🏗Version Control</h2>
               </div>
               <div className="show">{showVersion ? "Hide" : "Show"} </div>
             </div>
@@ -311,7 +315,7 @@ export default function Home() {
           <div className="left_cornor_1">
             <div className="header_skill" onClick={handleTest}>
               <div className="showSkill">
-                <h2>Testing</h2>
+                <h2>🧪Testing</h2>
               </div>
               <div className="show">{showTest ? "Hide" : "Show"} </div>
             </div>
@@ -333,7 +337,7 @@ export default function Home() {
           <div className="left_cornor_1">
             <div className="header_skill" onClick={handleApi}>
               <div className="showSkill">
-                <h2>API Integration</h2>
+                <h2>📲API Integration</h2>
               </div>
               <div className="show">{showApi ? "Hide" : "Show"} </div>
             </div>
@@ -365,6 +369,10 @@ export default function Home() {
         </div>
         <div className="right">
           <AboutMe />
+          <RecentProject />
+          <Card />
+          <RecentSkill />
+          <Skill />
         </div>
       </div>
     </main>
