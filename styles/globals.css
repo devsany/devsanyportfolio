@@ -90,12 +90,15 @@ main button {
   justify-content: space-between;
 }
 .navbar {
+  display: flex;
+  gap: 2rem;
   text-align: right;
   color: #242323;
   padding: 5px;
   flex-grow: 1;
   /* width: 10%; */
   margin: 10px;
+  /* margin-left: 15px; */
   background-color: rgb(209, 209, 226);
 }
 .header_skill {
@@ -429,6 +432,7 @@ span:hover {
     align-items: center;
   }
   .navbar {
+    display: flex;
     text-align: right;
     color: #242323;
     flex-grow: 1;
@@ -454,6 +458,7 @@ span:hover {
     background-color: rgb(209, 209, 226);
   }
   .location {
+    text-align: center;
     background-color: yellow;
     border-top: 5px solid #fff;
     transition-delay: 2s;

@@ -61,7 +61,18 @@ export default function Home() {
             {hide ? "Show Description ->" : "<- hide Description"}
           </button>
         </div>
-        <div className="navbar location">Navbar</div>
+        <div className="navbar location">
+          <div>📧 Email: sunnyrajbodhgaya13@gmail.com</div>
+          <div>
+            <a
+              style={{ color: "blue" }}
+              href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+            >
+              🔎LinkedIn
+            </a>
+          </div>
+          <div>📱+91 8540897814</div>
+        </div>
       </div>
       <div className="main">
         <div className="left" style={{ display: hide ? "none" : "block" }}>
