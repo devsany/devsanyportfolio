@@ -1,4 +1,4 @@
-export const testimonial_api = [
+export let testimonial_api = [
   {
     id: 1,
     topic: "About Me",
